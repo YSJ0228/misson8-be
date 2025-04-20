@@ -1,0 +1,37 @@
+{
+    "name": "codeit-panda-market-mission-3",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "start": "node ./src/main",
+        "precompose": "docker-compose build --no-cache",
+        "compose": "docker-compose down && docker-compose up",
+        "seed": "node ./prisma/seed"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MyAeroCode/codeit-panda-market.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MyAeroCode/codeit-panda-market/issues"
+    },
+    "homepage": "https://github.com/MyAeroCode/codeit-panda-market#readme",
+    "devDependencies": {
+        "prettier": "^3.3.2",
+        "prisma": "^5.16.2"
+    },
+    "dependencies": {
+        "@prisma/client": "^5.16.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "superstruct": "^2.0.2",
+        "swagger-ui-express": "^5.0.1",
+        "yaml": "^2.4.5"
+    }
+}
